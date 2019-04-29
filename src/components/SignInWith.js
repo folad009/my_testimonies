@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux'
 import GoogleLogin from 'react-google-login'
+import { GoogleLogout } from 'react-google-login';
 
 import { 
     SignInUser,
@@ -43,11 +44,16 @@ class SignInWith extends Component {
                     <Facebook/>
                     <br/>
                     <GoogleLogin className="button google"
-                    clientId=""
+                    clientId="503584030663-kr6he8hibka22o6fa4s29ajndl2bidq0.apps.googleusercontent.com"
                     onSuccess={responseGoogle}
                     onFailure={responseGoogle} >
                         <i className="fa fa-google"></i><span>Login with Google</span>
                     </GoogleLogin>
+                    <GoogleLogout
+                    buttonText="Logout"
+                    onLogoutSuccess={logout}
+                    >
+                    </GoogleLogout>
                 </li>
                 
             </ul>
