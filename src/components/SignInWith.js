@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux'
 import GoogleLogin from 'react-google-login'
-
+import Facebook from './Facebook'
 
 import { 
     SignInUser,
@@ -9,7 +9,7 @@ import {
     toggleOpen
  } from './../redux/actions/actions'
 
- import Facebook from './Facebook';
+ 
 
 class SignInWith extends Component {
 
