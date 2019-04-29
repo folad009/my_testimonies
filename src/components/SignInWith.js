@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux'
 import GoogleLogin from 'react-google-login'
-import { GoogleLogout } from 'react-google-login';
+
 
 import { 
     SignInUser,
@@ -49,11 +49,6 @@ class SignInWith extends Component {
                     onFailure={responseGoogle} >
                         <i className="fa fa-google"></i><span>Login with Google</span>
                     </GoogleLogin>
-                    <GoogleLogout
-                    buttonText="Logout"
-                    onLogoutSuccess={logout}
-                    >
-                    </GoogleLogout>
                 </li>
                 
             </ul>
