@@ -44,7 +44,7 @@ class SignInWith extends Component {
                     <Facebook/>
                     <br/>
                     <GoogleLogin className="button google"
-                    clientId="503584030663-kr6he8hibka22o6fa4s29ajndl2bidq0.apps.googleusercontent.com"
+                    clientId="469918457951-ku622q8n12gf8g1ihcl8em433et7mf2b.apps.googleusercontent.com"
                     onSuccess={responseGoogle}
                     onFailure={responseGoogle} >
                         <i className="fa fa-google"></i><span>Login with Google</span>
